@@ -1,3 +1,8 @@
+const express = require('express')
+const app = express()
+const port = 4000
+var path    = require("path");
+app.use('/style', express.static('style'));
 module.exports = {
 
     substractNumbers: function(value1, value2){
@@ -39,3 +44,16 @@ module.exports = {
     }
   
   }
+
+
+app.get('/',function(req,res){
+  res.sendFile(path.join(__dirname+'/index.html'));
+});
+
+app.get('/', (req, res) => {
+  res.send('Software Avanzado, Practica 1, Vacaciones Junio 2021')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
