@@ -43,7 +43,7 @@ module.exports = {
 
   const express = require('express')
   const app = express()
-  const port = 4000
+  const port = 3000
   var path    = require("path");
   app.use('/style', express.static('style'));
 app.get('/',function(req,res){
