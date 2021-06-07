@@ -6,7 +6,7 @@ const app = require('../201314715');
 sayGBResult = app.SayGoodbye();
 substractNumberResult = app.substractNumbers(6,5);
 esPrimoResult = app.esPrimo(17);
-potecia3Result = app.PotenciaCubo(3);
+potecia3Result = app.PotenciaCubo(2);
 esParResult = app.ParImar(5);
 
 describe('App', function(){
@@ -23,9 +23,9 @@ describe('App', function(){
   });
 
   describe('PotenciaCubo()', function(){
-    it('PotenciaCubo gets 3, result should be 27', function(){
+    it('PotenciaCubo gets 2, result should be 8', function(){
       
-      assert.equal(potecia3Result, 27);
+      assert.equal(potecia3Result, 8);
     });
 
     it('PotenciaCubo should return type number', function(){
