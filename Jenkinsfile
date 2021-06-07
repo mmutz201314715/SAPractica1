@@ -6,12 +6,6 @@ pipeline {
                 sh 'npm install'
             }
         }
-
-        stage('build express') {
-            steps {
-                sh 'npm install express -g'
-            }
-        }
         stage('test') {
             steps {
                 sh 'mocha'
