@@ -1,0 +1,26 @@
+{
+  "name": "sapractica1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "201314715.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmutz201314715/SAPractica1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmutz201314715/SAPractica1/issues"
+  },
+  "homepage": "https://github.com/mmutz201314715/SAPractica1#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  }
+}
