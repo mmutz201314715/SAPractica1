@@ -8,7 +8,8 @@ pipeline {
         }
         stage('build express') {
             steps {
-                sh 'npm install express'
+                sh 'npm install express',
+                sh 'npm install forever'
             }
         }
         stage('test') {
